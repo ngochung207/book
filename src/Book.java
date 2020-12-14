@@ -16,6 +16,14 @@ public class Book {
         this.weight = _weight;
     }
 
+    public double getTottalPrice (){
+        return this.amount * this.price;
+    }
+
+    public double getTottalWeight(){
+        return this.amount * this.weight;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -65,13 +73,5 @@ public class Book {
 
     public void setWeight(double weight) {
         this.weight = weight;
-    }
-
-    public double getTottalPrice (){
-        return this.amount * this.price;
-    }
-
-    public double getTottalWeight(){
-        return this.amount * this.weight;
     }
 }
